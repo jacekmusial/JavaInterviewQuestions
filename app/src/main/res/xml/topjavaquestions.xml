@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TOP JAVA QUESTIONS -->
+<topjava>
+    <entry>
+        <string name="id">1</string>
+        <string name="question">Which two method you need to implement for key Object in HashMap?</string>
+        <string name="answer">In order to use any object as Key in HashMap, it must implements equals and hashcode method in Java. Read How HashMap works in Java  for detailed explanation on how equals and hashcode method is used to put and get object from HashMap. </string>
+    </entry>
+    <entry>
+        <string name="id">2</string>
+        <string name="question">What is immutable object? Can you write immutable object?</string>
+        <string name="answer">Immutable classes are Java classes whose objects can not be modified once created. Any modification in Immutable object result in new object. For example is String is immutable in Java. Mostly Immutable are also final in Java, in order to prevent sub class from overriding methods in Java which can compromise Immutability. You can achieve same functionality by making member as non final but private and not modifying them except in constructor.</string>
+    </entry>
+    <entry>
+        <string name="id">3</string>
+        <string name="question">What is the difference between creating String as new() and literal?</string>
+        <string name="answer">When we create string with new() Operator, it’s created in heap and not added into string pool while String created using literal are created in String pool itself which exists in PermGen area of heap.</string>
+    </entry>
+    <entry>
+        <string name="id">4</string>
+        <string name="question">What is difference between String, StringBuffer and StringBuilder in Java?</string>
+        <string name="answer">String is fast, immutable, thread safe, and its stored in Constant String Pool. StringBuffer is mutable, each method is synchronized so StringBuffer is thread safe, and because of that, its slower than rest. StringBuilder is fast, mutable, NOT thread safe, and its stored in heap. </string>
+    </entry>
+    <entry>
+        <string name="id">5</string>
+        <string name="question">What is the difference between ArrayList and Vector?</string>
+        <string name="answer">ArrayList is fast, many threads can work on object at the same time; it increase its Array by 50% and doesn't define the increment size. Only Iterator class can by used for traverse arraylist. Vector is slower, thread safe, synchronized (one thread can work at the object at the time); Vector have setSize() to define increment size, by default it double its size and for traverse you can use both Enumeration and Iterator.</string>
+    </entry>
+    <entry>
+        <string name="id">6</string>
+        <string name="question">What is difference between Executor.submit() and Executor.execute() method?</string>
+        <string name="answer">Executor.submit() returns Future object which can be used to check result of submitted task. Can be used to cancel or to check isDone() etc. And Executor.execute() simply stars the tasks.</string>
+    </entry>
+    <entry>
+        <string name="id">7</string>
+        <string name="question">What is the difference between Factory and Abstract Factory Pattern?</string>
+        <string name="answer">Abstract Factory provides one more level of abstraction. Consider different factories each extended from an Abstract Factory and responsible for creation of different hierarchies of objects based on the type of factory. E.g. AbstractFactory extended by AutomobileFactory, UserFactory, RoleFactory etc. Each individual factory would be responsible for creation of objects in that genre.</string>
+    </entry>
+    <entry>
+        <string name="id">8</string>
+        <string name="question">What is Singleton? Is it better to make whole method synchronized or only critical section synchronized?</string>
+        <string name="answer">Singleton in Java is a class with just one instance in whole Java application, for example java.lang.Runtime is a Singleton class. Creating Singleton was tricky prior Java 4 but once Java 5 introduced Enum its very easy. see my article How to create thread-safe Singleton in Java for more details on writing Singleton using enum and double checked locking which is purpose of this Java interview question.</string>
+    </entry>
+    <entry>
+        <string name="id">9</string>
+        <string name="question">Give an example where you prefer abstract class over interface?</string>
+        <string name="answer">Both interface and abstract class follow "writing code for interface than implementation" design principle which adds flexibility in code. In Java you can only extend one class but implement multiple interface. So if you extend a class you lost your chance of extending another class. Interface are used to represent adjective or behavior e.g. Runnable, Clonable, Serializable etc, so if you use an abstract class to represent behavior your class can not be Runnable and Clonable at same time because you can not extend two class in Java but if you use interface your class can have multiple behavior at same time.</string>
+    </entry>
+    <entry>
+        <string name="id">10</string>
+        <string name="question">What is difference between overloading and overriding?</string>
+        <string name="answer">Overloading is adding a method with the same name but different signature. Overriding is changing the method implementation in the subclass.</string>
+    </entry>
+    <entry>
+        <string name="id">11</string>
+        <string name="question">Why is access to non-static variables not allowed from static methods in Java?</string>
+        <string name="answer">You can not access non-static data from static context in Java simply because non-static variables are associated with a particular instance of object while Static is not associated with any instance. </string>
+    </entry>
+    <entry>
+        <string name="id">12</string>
+        <string name="question">What is design patterns ? Have you used any design pattern in your code?</string>
+        <string name="answer">Design patterns are tried and tested way to solve particular design issues by various programmers in the world. Design patterns are extension of code reuse.</string>
+    </entry>
+    <entry>
+        <string name="id">13</string>
+        <string name="question">What is main benefit of using factory pattern? Where do you use it?</string>
+        <string name="answer">Factory pattern’s main benefit is increased level of encapsulation while creating objects. If you use Factory to create object you can later replace original implementation of Products or classes with more advanced and high performance implementation without any change on client layer.</string>
+    </entry>
+    <entry>
+        <string name="id">14</string>
+        <string name="question">What is observer design pattern in Java?</string>
+        <string name="answer">Observer design pattern is based on communicating changes in state of object to observers so that they can take there action. Simple example is a weather system where change in weather must be reflected in Views to show to public. Here weather object is Subject while different views are Observers. Look on this article for complete example of Observer pattern in Java.</string>
+    </entry>
+    <entry>
+        <string name="id">15</string>
+        <string name="question">What will be the problem if you don't override hashcode() method?</string>
+        <string name="answer">You will not be able to recover your object from hash Map if that is used as key in HashMap. See here  How HashMap works in Java for detailed explanation.</string>
+    </entry>
+    <entry>
+        <string name="id">16</string>
+        <string name="question">Is it better to synchronize critical section of getInstance() method or whole getInstance() method?</string>
+        <string name="answer">Answer is critical section because if we lock whole method than every time some one call this method will have to wait even though we are not creating any object)</string>
+    </entry>
+    <entry>
+        <string name="id">17</string>
+        <string name="question">What’s wrong using HashMap in multithreaded environment? When get() method go to infinite loop?</string>
+        <string name="answer">Get() will go to infite loop during concurrent access and re-sizing.</string>
+    </entry>
+    <entry>
+        <string name="id">18</string>
+        <string name="question">What will happen if you call return statement or System.exit on try or catch block ? will finally block execute?</string>
+        <string name="answer">Finally block will execute even if you put return statement in try block or catch block, but finally block won't run if you call System.exit form try or catch.</string>
+    </entry>
+    <entry>
+        <string name="id">19</string>
+        <string name="question">Can you override private or static method in Java?</string>
+        <string name="answer">You can not override private or static method in Java, if you create similar method with same return type and same method arguments that's called method hiding. </string>
+    </entry>
+    <entry>
+        <string name="id">20</string>
+        <string name="question">What will happen if we put a key object in a HashMap which is already there?</string>
+        <string name="answer">If you put the same key again than it will replace the old mapping because HashMap doesn't allow duplicate keys.</string>
+    </entry>
+    <entry>
+        <string name="id">21</string>
+        <string name="question">If a method throws NullPointerException in super class, can we override it with a method which throws RuntimeException?</string>
+        <string name="answer">One more tricky Java questions from overloading and overriding concept. Answer is you can very well throw super class of RuntimeException in overridden method but you can not do same if its checked Exception. </string>
+    </entry>
+    <entry>
+        <string name="id">22</string>
+        <string name="question">How do you ensure that N thread can access N resources without deadlock?</string>
+        <string name="answer">Key point here is order, if you acquire resources in a particular order and release resources in reverse order you can prevent deadlock.</string>
+    </entry>
+    <entry>
+        <string name="id">23</string>
+        <string name="question">Can you override private or static method in Java?</string>
+        <string name="answer">You can not override private or static method in Java, if you create similar method with same return type and same method arguments that's called method hiding. </string>
+    </entry>
+    <entry>
+        <string name="id">24</string>
+        <string name="question">What is difference between CyclicBarrier and CountDownLatch in Java?</string>
+        <string name="answer">Main difference between both of them is that you can reuse CyclicBarrier even if Barrier is broken but you can not reuse CountDownLatch in Java.</string>
+    </entry>
+    <entry>
+        <string name="id">25</string>
+        <string name="question">Can you access non static variable in static context?</string>
+        <string name="answer">No you can not access static variable in non static context in Java. Read why you can not access non-static variable from static method to learn more about this tricky Java questions.</string>
+    </entry>
+</topjava>

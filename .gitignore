@@ -1,0 +1,28 @@
+# IntelliJ
+out/
+.idea/
+target/
+*.iml
+
+### Java ###
+*.class
+classes/
+
+# Package Files #
+*.jar
+
+### Gradle ###
+.gradle
+build/
+
+### Specific ###
+*.zip
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Avoid ignoring AndroidWiFiADB.iml file to be able to import the project into any IntelliJ IDE and run/debug the pulgin without problems
+!AndroidWiFiADB.iml

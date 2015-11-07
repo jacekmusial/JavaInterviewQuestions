@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Java Interview Questions</string>
+
+    <string name="title_section1">Top Java</string>
+    <string name="title_section2">Core Java</string>
+    <string name="title_section3">Data structures</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="menu1">asd</string>
+    <string name="menu2">zxc</string>
+    <string name="menu3">dsafzxcfsad</string>
+
+</resources>
