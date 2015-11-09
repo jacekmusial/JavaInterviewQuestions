@@ -8,6 +8,6 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/menu1"
-        android:id="@+id/textView" />
+        android:id="@+id/textView1" />
 
 </RelativeLayout>

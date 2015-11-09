@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TOP JAVA QUESTIONS -->
+<topjava>
+    <entry>
+        <id>1</id>
+        <question>Which two method you need to implement for key Object in HashMap?</question>
+        <answer>In order to use any object as Key in HashMap, it must implements equals and hashcode method in Java. Read How HashMap works in Java  for detailed explanation on how equals and hashcode method is used to put and get object from HashMap. </answer>
+    </entry>
+
+</topjava>
