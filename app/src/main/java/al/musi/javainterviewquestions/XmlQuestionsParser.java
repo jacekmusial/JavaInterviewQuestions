@@ -1,6 +1,5 @@
 package al.musi.javainterviewquestions;
 
-import android.util.Log;
 import android.util.Xml;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -41,7 +40,6 @@ public class XmlQuestionsParser  {
             String name = parser.getName();
             // Starts by looking for the entry tag
             if (name.equals("entry")) {
-                Log.d("xmlparser:", "+ENTRY ");
                 entries.add(readEntry(parser));
             } else {
                 skip(parser);
