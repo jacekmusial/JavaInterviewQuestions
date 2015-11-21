@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- TOP JAVA QUESTIONS -->
-<topjava>
+<java>
     <entry>
         <id>1</id>
         <question>Which two method you need to implement for key Object in HashMap?</question>
-        <answer>In order to use any object as Key in HashMap, it must implements equals and hashcode method in Java. Read How HashMap works in Java  for detailed explanation on how equals and hashcode method is used to put and get object from HashMap. </answer>
+        <answer>In order to use any object as Key in HashMap, it must implements equals and hashcode method in Java. </answer>
     </entry>
     <entry>
         <id>2</id>
         <question>What is immutable object? Can you write immutable object?</question>
-        <answer>Immutable classes are Java classes whose objects can not be modified once created. Any modification in Immutable object result in new object. For example is String is immutable in Java. Mostly Immutable are also final in Java, in order to prevent sub class from overriding methods in Java which can compromise Immutability. You can achieve same functionality by making member as non final but private and not modifying them except in constructor.</answer>
+        <answer>Immutable object cannot be modified once created. Any modification in Immutable object result in new object. For example String is immutable in Java. Mostly Immutable are also final in Java, in order to prevent subclass from overriding methods in Java which can compromise Immutability. You can achieve same functionality by making member as non final but private and not modifying them except in constructor.</answer>
     </entry>
     <entry>
         <id>3</id>
@@ -20,17 +20,21 @@
     <entry>
         <id>4</id>
         <question>What is difference between String, StringBuffer and StringBuilder in Java?</question>
-        <answer>String is fast, immutable, thread safe, and its stored in Constant String Pool. StringBuffer is mutable, each method is synchronized so StringBuffer is thread safe, and because of that, its slower than rest. StringBuilder is fast, mutable, NOT thread safe, and its stored in heap.</answer>
+        <answer>String is fast, immutable, thread safe, and its stored in Constant String Pool.
+StringBuffer is mutable, each method is synchronized so StringBuffer is thread safe, and because of that, its slower than rest.
+StringBuilder is fast, mutable, NOT thread safe, and its stored in heap.</answer>
     </entry>
     <entry>
         <id>5</id>
         <question>What is the difference between ArrayList and Vector?</question>
-        <answer>ArrayList is fast, many threads can work on object at the same time; it increase its Array by 50% and doesn't define the increment size. Only Iterator class can by used for traverse arraylist. Vector is slower, thread safe, synchronized (one thread can work at the object at the time); Vector have setSize() to define increment size, by default it double its size and for traverse you can use both Enumeration and Iterator.</answer>
+        <answer>ArrayList is fast, many threads can work on object at the same time; it increase its size by half and doesn't define the increment size. Only Iterator class can by used for traverse ArrayList.
+Vector is slower, thread safe, synchronized (one thread can work at the object at the time); Vector have setSize() to define increment size, by default it double its size. For traverse you can use both Enumeration and Iterator.</answer>
     </entry>
     <entry>
         <id>6</id>
         <question>What is difference between Executor.submit() and Executor.execute() method?</question>
-        <answer>Executor.submit() returns Future object which can be used to check result of submitted task. Can be used to cancel or to check isDone() etc. And Executor.execute() simply stars the tasks.</answer>
+        <answer>Executor.submit() returns Future object which can be used to check result of submitted task. Can be used to cancel or to check isDone() etc.
+And Executor.execute() simply stars the tasks.</answer>
     </entry>
     <entry>
         <id>7</id>
@@ -45,7 +49,10 @@
     <entry>
         <id>9</id>
         <question>Give an example where you prefer abstract class over interface?</question>
-        <answer>Both interface and abstract class follow "writing code for interface than implementation" design principle which adds flexibility in code. In Java you can only extend one class but implement multiple interface. So if you extend a class you lost your chance of extending another class. Interface are used to represent adjective or behavior e.g. Runnable, Clonable, Serializable etc, so if you use an abstract class to represent behavior your class can not be Runnable and Clonable at same time because you can not extend two class in Java but if you use interface your class can have multiple behavior at same time.</answer>
+        <answer>An abstract class can have shared state or functionality. An interface is only a promise to provide the state or functionality. A good abstract class will reduce the amount of code that has to be rewritten because it's functionality or state can be shared.
+The interface has no defined information to be shared.
+In Java you can only extend one class but implement multiple interfaces.
+            </answer>
     </entry>
     <entry>
         <id>10</id>
@@ -59,7 +66,7 @@
     </entry>
     <entry>
         <id>12</id>
-        <question>What is design patterns ? Have you used any design pattern in your code?</question>
+        <question>What is design patterns? Have you used any design pattern in your code?</question>
         <answer>Design patterns are tried and tested way to solve particular design issues by various programmers in the world. Design patterns are extension of code reuse.</answer>
     </entry>
     <entry>
@@ -70,22 +77,23 @@
     <entry>
         <id>14</id>
         <question>What is observer design pattern in Java?</question>
-        <answer>Observer design pattern is based on communicating changes in state of object to observers so that they can take there action. Simple example is a weather system where change in weather must be reflected in Views to show to public. Here weather object is Subject while different views are Observers. Look on this article for complete example of Observer pattern in Java.</answer>
+        <answer>Observer design pattern is based on communicating changes in state of object to observers so that they can take there action. Simple example is a weather system where change in weather must be reflected in Views to show to public.
+Here weather object is Subject while different views are Observers.</answer>
     </entry>
     <entry>
         <id>15</id>
         <question>What will be the problem if you don't override hashcode() method?</question>
-        <answer>You will not be able to recover your object from hash Map if that is used as key in HashMap. See here  How HashMap works in Java for detailed explanation.</answer>
+        <answer>You will not be able to recover your object from hash Map if that is used as key in HashMap.</answer>
     </entry>
     <entry>
         <id>16</id>
         <question>Is it better to synchronize critical section of getInstance() method or whole getInstance() method?</question>
-        <answer>Answer is critical section because if we lock whole method than every time some one call this method will have to wait even though we are not creating any object)</answer>
+        <answer>Answer is critical section because if we lock whole method than every time some one call this method will have to wait even though we are not creating any object.</answer>
     </entry>
     <entry>
         <id>17</id>
         <question>What’s wrong using HashMap in multithreaded environment? When get() method go to infinite loop?</question>
-        <answer>Get() will go to infite loop during concurrent access and re-sizing.</answer>
+        <answer>Get() will go to infinite loop during concurrent access and re-sizing.</answer>
     </entry>
     <entry>
         <id>18</id>
@@ -125,6 +133,6 @@
     <entry>
         <id>25</id>
         <question>Can you access non static variable in static context?</question>
-        <answer>No you can not access static variable in non static context in Java. Read why you can not access non-static variable from static method to learn more about this tricky Java questions.</answer>
+        <answer>No you can not access static variable in non static context in Java.</answer>
     </entry>
-</topjava>
+</java>

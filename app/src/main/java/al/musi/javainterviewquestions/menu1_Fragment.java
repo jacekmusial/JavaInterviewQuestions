@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 
 import org.xmlpull.v1.XmlPullParserException;
@@ -26,9 +25,6 @@ public class menu1_Fragment extends Fragment {
     private XmlQuestionsParser xmlQuestionsParser = new XmlQuestionsParser();
     private List<XmlQuestionsParser.Entry> entries = null;
     private InputStream stream = null;
-    private String question = null;
-    private String answer = null;
-    private String id = null;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -47,16 +43,11 @@ public class menu1_Fragment extends Fragment {
             e.printStackTrace();
         }
 
-        //TextView textView = (TextView) rootview.findViewById(R.id.textView1);
-        //try {
-        //} catch (java.lang.NullPointerException e) { Log.d("menu1_Fragment", e.toString()); }
-
         ExpandableListView listView;
         listView = (ExpandableListView) rootview.findViewById(R.id.expandableListView);
 
         ArrayList<String> questionList = new ArrayList<>();
         ArrayList<String> answerList = new ArrayList<>();
-        //StringBuilder stringBuilder = new StringBuilder();
 
         for (XmlQuestionsParser.Entry entry : entries) {
             questionList.add(entry.question);
@@ -67,15 +58,7 @@ public class menu1_Fragment extends Fragment {
         listAdapter = new MyExpandableListAdapter(inflater, questionList, answerList);
 
         listView.setAdapter(listAdapter);
-        /*StringBuilder stringBuilder = new StringBuilder();
-        for (XmlQuestionsParser.Entry entry : entries) {
-            stringBuilder.append(entry.id + " " + entry.answer + "\n" + entry.question);
-            Log.d("menu1_Fragment", entry.id + " " + entry.answer + "\n" + entry.question);
-        }*/
 
-        /*if (textView != null) {
-            textView.setText(stringBuilder.toString());
-        }*/
         return rootview;
     }
 }

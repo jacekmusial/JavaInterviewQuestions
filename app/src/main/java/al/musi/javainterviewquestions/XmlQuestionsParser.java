@@ -32,7 +32,7 @@ public class XmlQuestionsParser  {
     private List<Entry> readFeed(XmlPullParser parser) throws XmlPullParserException, IOException {
         List<Entry> entries = new ArrayList<Entry>();
 
-        parser.require(XmlPullParser.START_TAG, ns, "topjava");
+        parser.require(XmlPullParser.START_TAG, ns, "java");
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
                 continue;

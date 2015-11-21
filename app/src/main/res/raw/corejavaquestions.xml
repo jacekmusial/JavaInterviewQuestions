@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TOP JAVA QUESTIONS -->
+<java>
+    <entry>
+        <id>1</id>
+        <question>What all memory areas are allocated by Java Virtual Machine?</question>
+        <answer>Heap, Stack, Program Counter Register and Native Method Stack.</answer>
+    </entry>
+    <entry>
+        <id>2</id>
+        <question>What is javac?</question>
+        <answer>Program which produce the java byte code from *.java file. It is the intermediate representation of your source code that contains instructions.</answer>
+    </entry>
+    <entry>
+        <id>3</id>
+        <question>What is a class?</question>
+        <answer>Class is nothing but a template that describes the data and behavior associated with instances of that class.</answer>
+    </entry>
+    <entry>
+        <id>4</id>
+        <question>What is the base class of all classes?</question>
+        <answer>java.lang.Object</answer>
+    </entry>
+    <entry>
+        <id>5</id>
+        <question>What are primitive data types?</question>
+        <answer>byte - 8 bits. char - 16 bits. short - 16 bits. int - 32 bits.
+long - 64 bits. float - 32 bits. double - 64 bits.</answer>
+    </entry>
+    <entry>
+        <id>6</id>
+        <question>What are Literals?</question>
+        <answer>A literal is a value that may be assigned to a primitive or String variable or passed as an argument to a method.</answer>
+    </entry>
+    <entry>
+        <id>7</id>
+        <question>java.lang.* is imported by default. For using String and Exception classes, you don’t need to explicitly import this package. What are the major classes inside this package?</question>
+        <answer>Object class, Data type wrapper classes, Math class, String class, System and Runtime classes, Thread classes, Exception classes, Process classes and Class classes.</answer>
+    </entry>
+    <entry>
+        <id>8</id>
+        <question>What are 4 main principles of OOPs language?</question>
+        <answer>Inheritance, Polymorphism, Data Encapsulation and Abstraction</answer>
+    </entry>
+    <entry>
+        <id>9</id>
+        <question>What is meant by pass by reference and pass by value?</question>
+        <answer>Pass by reference means, passing the address itself rather than passing the value. Pass by value means passing a copy of the value.
+        </answer>
+    </entry>
+    <entry>
+        <id>10</id>
+        <question>What are 4 main principles of OOPs language?</question>
+        <answer>Inheritance, Polymorphism, Data Encapsulation and Abstraction</answer>
+    </entry>
+    <entry>
+        <id>11</id>
+        <question>What is inheritance?</question>
+        <answer>Inheritance is the process in which one class acquires properties and functionalities of another class. Inheritance brings reusability of code in java applications</answer>
+    </entry>
+    <entry>
+        <id>12</id>
+        <question>What is polymorphism and what are types of it?</question>
+        <answer>Polymorphism is the ability of an object to take many forms. Classic example is to have more than one method with the same name in a single class. There are two types of polimorphism: static and dynamic.
+Static polimorphism, called compile time polimorphism, is nothing more than method overloading. Dynamic (runtime) polimorphism is basically method overriding, between class X and class Y (which extends from class X). </answer>
+    </entry>
+    <entry>
+        <id>13</id>
+        <question>What is the difference between method overloading and method overriding?</question>
+        <answer>Overloading methods is having more than one method with the same name but different types of return and/or different number of arguments.
+Overriding methods is when you override method from base class in your child class. </answer>
+    </entry>
+    <entry>
+        <id>14</id>
+        <question>What is static and dynamic binding?</question>
+        <answer>Static binding happens at compile-time, while dynamic binding happens at runtime, when compiler is not able to resolve the call/bindings at runtime.
+Binding of private, static and final methods always happens at compile time. Binding of overridden methods happens at runtime.</answer>
+    </entry>
+</java>
